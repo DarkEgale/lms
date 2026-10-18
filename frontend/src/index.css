@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 244 247 245;
+  --surface: 255 255 255;
+  --ink: 27 36 48;
+  --muted: 95 107 118;
+  --line: 219 227 223;
+  --brand: 15 94 77;
+  --brand-ink: 255 255 255;
+  --hover: 232 240 236;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: 15 23 20;
+    --surface: 22 33 29;
+    --ink: 232 239 236;
+    --muted: 154 168 162;
+    --line: 42 58 52;
+    --brand: 63 181 150;
+    --brand-ink: 8 32 26;
+    --hover: 31 46 40;
+  }
+}
