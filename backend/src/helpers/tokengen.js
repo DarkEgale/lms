@@ -12,12 +12,13 @@ const accessToken=(id)=>{
         throw error;
      }
 }
+
 const refreshToken=(id)=>{
      try{
         if(!id){
             throw new Error("Id is not found !")
         }
-        const token=jwt.sign({id:id},process.env.REFRESH_API_SECRECT,{expireIn:"15m"})
+        const token=jwt.sign({id:id},process.env.REFRESH_API_SECRECT,{expireIn:"30d"})
         return token;
      }catch(error){
         throw error;
