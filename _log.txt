@@ -1,0 +1,5 @@
+﻿1613c48 phase 9: login and registration
+6c6d495 phase 8: search page
+581e30b phase 7: footer
+3cd3bd5 phase 6: why, stats and reviews
+cd4fd12 phase 5: category rows
