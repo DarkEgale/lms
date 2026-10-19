@@ -46,7 +46,7 @@ export const SERVICES = [
     count: '২টি পণ্য',
     color: '#6b2d5c',
     seed: 'service-keyboard-mouse',
-    to: '/search?q=keyboard mouse',
+    to: '/search?q=মাউস',
   },
   {
     id: 7,
