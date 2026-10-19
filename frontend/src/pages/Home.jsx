@@ -2,6 +2,9 @@ import HeroSlider from '../components/home/HeroSlider'
 import ServicesSlider from '../components/home/ServicesSlider'
 import FeaturedGrid from '../components/home/FeaturedGrid'
 import CategoryRow from '../components/home/CategoryRow'
+import WhySection from '../components/home/WhySection'
+import StatsStrip from '../components/home/StatsStrip'
+import Reviews from '../components/home/Reviews'
 import { CATEGORIES } from '../data'
 
 function Home() {
@@ -28,6 +31,11 @@ function Home() {
       {CATEGORIES.map((category) => (
         <CategoryRow key={category} category={category} />
       ))}
+
+      {/* Why / stats / reviews (Phase 6) */}
+      <WhySection />
+      <StatsStrip />
+      <Reviews />
     </div>
   )
 }
