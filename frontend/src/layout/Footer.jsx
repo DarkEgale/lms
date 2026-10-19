@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Logo from '../components/common/Logo'
 
 // Footer links point at existing routes; policy links stay as placeholders.
