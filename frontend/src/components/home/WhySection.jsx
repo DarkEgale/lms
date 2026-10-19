@@ -1,4 +1,4 @@
-import { Award, CheckCircle2, Clock, ShieldCheck, Users } from 'lucide-react'
+import { CheckCircle2, Clock, ShieldCheck, Users } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
 
 const BENEFITS = [
