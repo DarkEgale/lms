@@ -1,29 +1,19 @@
 import jwt from "jsonwebtoken";
-import { token } from "morgan";
 
-const accessToken=(id)=>{
-     try{
-        if(!id){
-            throw new Error("Id is not found !")
-        }
-        const token=jwt.sign({id:id},process.env.API_SECRECT,{expireIn:"15m"})
-        return token;
-     }catch(error){
-        throw error;
-     }
-}
+const accessToken = (id) => {
+   if (!id) {
+      throw new Error('User ID is required');
+   }
 
-const refreshToken=(id)=>{
-     try{
-        if(!id){
-            throw new Error("Id is not found !")
-        }
-        const token=jwt.sign({id:id},process.env.REFRESH_API_SECRECT,{expireIn:"30d"})
-        return token;
-     }catch(error){
-        throw error;
-     }
-}
+   return jwt.sign({ id }, process.env.API_SECRET, { expiresIn: '15m' });
+};
 
+const refreshToken = (id) => {
+   if (!id) {
+      throw new Error('User ID is required');
+   }
 
-export {accessToken,refreshToken}
+   return jwt.sign({ id }, process.env.REFRESH_API_SECRET, { expiresIn: '30d' });
+};
+
+export { accessToken, refreshToken };

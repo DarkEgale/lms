@@ -1,9 +1,8 @@
 
 
 
+import { randomUUID } from 'node:crypto';
 
+const sessionId = () => randomUUID();
 
-const sessionId=()=>{
-    const sid=crypto.randomUUID()
-}
-export {sessionId};
+export { sessionId };

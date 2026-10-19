@@ -1,22 +1,15 @@
 
-
-
-const setCookies=async(res,age,sid,id,type,token)=>{
-    if(!res || !age || !sid || !id || !type || !token){
-        throw new Error("Please send all required data in function parameter")
+const setCookie = (res, name, token, maxAge) => {
+    if (!res || !name || !token || !maxAge) {
+        throw new Error('Response, cookie name, token, and max age are required');
     }
-    try{
-        const cookieOptions={
-            httpOnly:true,
-            secure:true,
-            sameSite:'None',
-            maxAge:age
-        }
-        res.cookie(type,token,cookieOptions);
-        return "Cookie successfuly set"
-    }catch(error){
-        throw new Error;
-    }
-}
 
-export {setCookies}
+    res.cookie(name, token, {
+        httpOnly: true,
+        secure: true,
+        sameSite: 'None',
+        maxAge,
+    });
+};
+
+export { setCookie };
