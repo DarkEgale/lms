@@ -1,6 +1,8 @@
 import HeroSlider from '../components/home/HeroSlider'
 import ServicesSlider from '../components/home/ServicesSlider'
 import FeaturedGrid from '../components/home/FeaturedGrid'
+import CategoryRow from '../components/home/CategoryRow'
+import { CATEGORIES } from '../data'
 
 function Home() {
   return (
@@ -21,9 +23,15 @@ function Home() {
 
       <ServicesSlider />
       <FeaturedGrid />
+
+      {/* Five category rows (Phase 5) */}
+      {CATEGORIES.map((category) => (
+        <CategoryRow key={category} category={category} />
+      ))}
     </div>
   )
 }
 
 export default Home
+
 
