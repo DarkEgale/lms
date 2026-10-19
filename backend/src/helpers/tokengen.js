@@ -5,7 +5,7 @@ const accessToken = (id) => {
       throw new Error('User ID is required');
    }
 
-   return jwt.sign({ id }, process.env.API_SECRET, { expiresIn: '15m' });
+   return jwt.sign({ id }, process.env.API_SECRET, { expiresIn: '7m' });
 };
 
 const refreshToken = (id) => {
