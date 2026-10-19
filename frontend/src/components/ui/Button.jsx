@@ -4,6 +4,7 @@ const VARIANTS = {
   primary: 'bg-brand text-brand-ink hover:opacity-90',
   accent: 'bg-accent text-footer hover:brightness-95',
   outline: 'border border-line bg-surface text-ink hover:bg-hover',
+  white: 'border border-white bg-transparent text-white hover:bg-white/10',
   link: 'bg-transparent px-0 text-brand hover:underline',
 }
 

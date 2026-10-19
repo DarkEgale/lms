@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import MainLayout from './layout/MainLayout'
 import UiKit from './pages/UiKit'
+import Home from './pages/Home'
 
 const Placeholder = ({ text }) => <div className="py-16 text-center text-muted">{text}</div>
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <Routes>
       <Route element={<MainLayout />}>
-        <Route path="/" element={<Placeholder text="হোম পেজ — Phase 3 এ তৈরি হবে" />} />
+        <Route path="/" element={<Home />} />
         <Route path="/search" element={<Placeholder text="সার্চ পেজ — Phase 8 এ তৈরি হবে" />} />
         <Route path="/login" element={<Placeholder text="লগইন — Phase 9 এ তৈরি হবে" />} />
         <Route path="/register" element={<Placeholder text="রেজিস্ট্রেশন — Phase 9 এ তৈরি হবে" />} />
